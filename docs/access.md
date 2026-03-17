@@ -48,7 +48,19 @@ Host <alias>
 	Verify that you can log in using `ssh <alias>` before you move on. You still need to provide your password.
 
 ## Set up passwordless SSH access
+To set up passwordless SSH access we need to generate a cryptographic key. Type the following command into the command prompt. If the command reports that a key already exists press ++n++ to avoid overwriting the existing key. 
+
+```cmd
+ssh-keygen -q -t rsa -b 4096 -f "%USERPROFILE%\.ssh\id_rsa" -N ""
+```
+Now that you have an rsa key. Transfer your public key to the lab by running the following. **Make sure** to replace `<alias>` with your chosen alias from the step above. You will be prompted for your SSH password.
 
 ```cmd
 type "%USERPROFILE%\.ssh\id_rsa.pub" | ssh <alias> "mkdir -p ~/.ssh && chmod 700 ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys"
+```
+
+You should now be able to login to the Linux server without being prompted for a password by running
+
+```cmd
+ssh <alias>
 ```

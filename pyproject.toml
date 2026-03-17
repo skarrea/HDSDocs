@@ -5,13 +5,6 @@ description = "Documentation for the linux servers at HDS"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "click>=8.1.8",
-    "deepmerge>=2.0",
-    "markdown>=3.7",
-    "pygments>=2.16",
-    "pymdown-extensions>=10.15",
-    "pyyaml>=6.0.2",
-    "tomli>=2.0; python_version < '3.11'",
 ]
 
 [dependency-groups]
