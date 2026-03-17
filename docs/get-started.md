@@ -1,9 +1,9 @@
 # Get started
 This is the documentation for linux and GPU servers at [helsedatasenteret at St. Olavs hospital](https://www.stolav.no/avdelinger/sentral-stab/forskningsavdelingen/helsedatasenter/) (HDS). The linux CPU and GPU servers is an offer to researchers that:
 
-- require a linux environment
 - that have more complex needs
 - require additional compute 
+- require a linux environment
 
 This documentation describes how the servers are set up and the tools that are preinstalled. 
 
