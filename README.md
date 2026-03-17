@@ -1,3 +1,1 @@
-# HDS Linux server documentation
-This is the documentation for the Linux servers for [Helsedatasenteret at St. Olavs hospital](https://www.stolav.no/avdelinger/sentral-stab/forskningsavdelingen/helsedatasenter/). 
-The documentation is based on Markdown and uses the [Zensical static site generator](https://github.com/zensical/zensical) to generate a webpage. The webpage is built and published via GitHub Actions.
+# HDS linux server documentation
